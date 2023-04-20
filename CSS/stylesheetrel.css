@@ -1,0 +1,100 @@
+* { 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://img.freepik.com/fotos-gratis/tijolos-brancos-da-textura-da-parede_1203-1665.jpg?w=2000);
+    background-size: cover;
+}
+
+main {
+    width: 700px;
+    height: 300px;
+    background-color: black;
+    border-radius: 15px;
+    border: groove 10px rgb(28, 31, 28);
+    box-shadow: -10px 10px 20px 10px black;
+}
+
+.numeros {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hh, .mm, .ss {
+    height: 180px;
+    width: 150px;
+    border-radius: 10px;
+    color: red;
+    text-align: center;
+    font-size: 130px;
+    font-family: fantasy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow( 0px 0px 10px red);
+}
+
+.separador {
+    font-size: 130px;
+    color: red;
+    filter: drop-shadow( 0px 0px 8px red);
+    font-family: fantasy;
+}
+
+.dmy {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    font-family: fantasy;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+}
+
+.day, .month, .year {
+    color: red;
+    filter: drop-shadow( 0px 0px 8px red);
+}
+
+.digital {
+    text-transform: none;
+    width: 50%;
+    text-align: right;
+    margin-right: 2%;
+}
+
+@media (max-width: 768px) {
+    main{
+        width: 350px;
+        height: 150px;    
+    }
+
+    .hh, .mm, .ss {
+        height: 90px;
+        width: 75px;
+        font-size: 65px;
+    }
+    
+    .separador {
+        font-size: 65px;
+    }
+
+    .dmy {
+        font-size: 10px;
+    }
+    
+
+}
